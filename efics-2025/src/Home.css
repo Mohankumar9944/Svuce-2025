@@ -1,0 +1,244 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+    width: 100vw;
+    color: black;
+    background-color: white;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  .header {
+    color: black;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  nav, a{
+    padding:10px;
+  }
+  
+  nav a, nav Link {
+    text-decoration: none;
+    color: black;
+  }
+  @media (max-width:615px){
+    nav, a{
+        flex-direction: column;
+        margin-right:0px;
+    }
+  }
+  .description{
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 50, 0, 0.7), rgba(0, 50, 0, 0.7)), url('image1.png');
+    background-position: center;
+    background-repeat:repeat;
+    color:black;
+    font-weight: bold;
+  }
+  .description h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    color: white;
+
+  }
+  
+  
+  .description p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: white;
+  }
+  
+  .header nav {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  /* About Section */
+  .about {
+    background-color: white;
+    padding: 2rem;
+    /* margin: 10px 80px; */
+  }
+  
+  .about h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #4caf50;
+    
+  }
+  .about p{
+    font-size: 1rem;
+    color:black;
+  }
+  
+  /* Keynote Speaker Section */
+  .outer-section{
+    background-image: url("image13.png");
+    display: flex;
+    flex-direction: column;
+  }
+  .keynote {
+    
+    padding: 2rem;
+    margin: 5rem 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .keynote h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: black;
+  }
+  
+  .speaker-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    margin-top: 1rem;
+    gap: 1rem;
+    overflow:visible;
+  }
+  
+  
+  .speaker-card .speaker-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+  }
+
+  
+  .speaker-card p {
+    margin: 0.5rem;
+    
+  }
+  
+  .ReadMore {
+    text-decoration: none;
+    text-align: start;
+  }
+  /* Schedule Section */
+  .schedule {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .schedule h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #4caf50;
+  }
+  .schedule p{
+    color: black;
+  }
+  .schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .schedule table th,
+  .schedule table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+  }
+  
+  .schedule table th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .schedule table td {
+    background-color: #f9f9f9;
+  }
+
+  @media  (max-width: 700px) {
+    .outer-section{
+      height: 500px;
+      font-size: 10px;
+    }
+    .keynote {
+      width: 90%;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      border: 200px;
+      
+    }
+  
+    .speaker-card {
+      text-align: center;
+    }
+  
+    .speaker-card .speaker-img {
+      margin: 0 auto 1rem auto;
+    }
+  }
+  @media (max-width: 500px) {
+    .outer-section{
+      height: 500px;
+      font-size: 8px;
+    }
+  }
+  @media  (min-width: 700px) {
+    .outer-section{
+
+      min-height: 500px;
+      font-size: 14px;
+    }
+    .keynote {
+      width: 90%;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      border: 200px;
+      
+    }
+  
+    .speaker-card {
+      text-align: center;
+    }
+  
+    .speaker-card .speaker-img {
+      margin: 0 auto 1rem auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .schedule table {
+      margin-right: 10px;
+      overflow-x: visible;
+      white-space: wrap;
+    }
+  }
+  @media (max-width: 768px) {
+    .about {
+      margin: 10px;
+      padding: 1.5rem;
+    }
+  }

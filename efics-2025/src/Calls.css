@@ -1,0 +1,123 @@
+.Calls-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .Inner-Calls-Section {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  .Paper-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .Heading {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .Place {
+    font-size: 1.2rem;
+    color: black;
+  }
+  
+  .Date-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+  }
+  
+  .Inner-Date-section, .Place-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .Date, .Location {
+    width: 16px;
+    height: 16px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+  }
+  
+  /* Submission Guidelines */
+  .submission-heading, .Important_date, .publish, .registration {
+    font-size: 1.6rem;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .submission-lists, .List, .details {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .guidelines-list, .Lists {
+    padding-left: 20px;
+    list-style: square;
+  }
+  
+  .submission-lists li, .guidelines-list li, .Lists li, .List li, .details li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: black;
+  }
+  
+  /* Publication Section */
+  .more-details {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+  }
+  
+  /* Submission Button */
+  .ppapers {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .my-button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .my-button:hover {
+    background-color: #1abc9c;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .Date-section {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .Heading {
+      font-size: 2rem;
+    }
+  
+    .submission-heading, .Important_date, .publish, .registration {
+      font-size: 1.3rem;
+    }
+  
+    
+  }
+  
