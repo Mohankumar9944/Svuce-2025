@@ -16,7 +16,7 @@ function Navbar() {
         <span></span>
       </div>
       <div className={`links ${isOpen ? "active" : ""}`}>
-        <Link to="/Home">Homes</Link>
+        <Link to="/Home">Home</Link>
         <Link to="/ConferenceTheme">Conference Theme</Link>
         <Link to="/Calls">Call for Papers</Link>
         <Link to="/Schedule">Schedule</Link>
