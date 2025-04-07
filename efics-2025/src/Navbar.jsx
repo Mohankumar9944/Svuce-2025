@@ -9,7 +9,7 @@ function Navbar() {
   };
   return (
     <nav className="navbar">
-      <img className="logo" src="image4.jpg"/>
+      <img className="logo" src="logo.jpg" />
       <div className="hamburger" onClick={toggleMenu}>
         <span></span>
         <span></span>

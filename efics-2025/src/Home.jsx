@@ -36,7 +36,7 @@ const Home = () => {
           <section className="keynote">
           
           <div className="speaker-card">
-            <img src="KHU026088.png" alt="Prof. Jae Su Yu" className="speaker-img" />
+            <img src="efics-2025\public\google.jpeg" class="speaker-img" />
             <div>
               <h2>OUR Keynote Speaker</h2>
               <div className="scroll-bar">
