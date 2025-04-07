@@ -4,7 +4,6 @@ import "./Navbar.css"
 import logo from "./logo.jpg"
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -17,7 +16,7 @@ function Navbar() {
         <span></span>
       </div>
       <div className={`links ${isOpen ? "active" : ""}`}>
-        <Link to="/Home">Home</Link>
+        <Link to="/Home">Homes</Link>
         <Link to="/ConferenceTheme">Conference Theme</Link>
         <Link to="/Calls">Call for Papers</Link>
         <Link to="/Schedule">Schedule</Link>

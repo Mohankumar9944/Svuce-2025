@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { HashRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Home from "./Home"
 import Contact from "./Contact"
@@ -15,8 +15,9 @@ function App() {
     <>
       <Router>
         <Navbar/>
+        
         <Routes>
-        <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home/>} />
           <Route path="/Contact" element={<Contact/>} />
           <Route path="/ConferenceTheme" element={<ConferenceTheme/>}/>
