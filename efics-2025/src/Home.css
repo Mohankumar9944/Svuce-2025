@@ -44,9 +44,6 @@ body {
     height: 400px;
     text-align: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 50, 0, 0.7), rgba(0, 50, 0, 0.7)), url('ad.png');
-    background-position: center;
-    background-repeat:repeat;
     color:black;
     font-weight: bold;
   }
@@ -93,7 +90,6 @@ body {
   
   /* Keynote Speaker Section */
   .outer-section{
-    background-image: url("tree.png");
     display: flex;
     flex-direction: column;
   }

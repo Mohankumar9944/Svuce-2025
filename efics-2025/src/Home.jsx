@@ -2,13 +2,26 @@ import React from 'react'
 import "./Home.css"
 import "./Navbar.jsx"
 import "./Navbar.css"
+import logo from "./Jae.png"
+import image from "./ad.png"
+import tree from "./tree.png"
 const Home = () => {
+  const myStyle={
+    backgroundImage: `linear-gradient(rgba(0, 50, 0, 0.7), rgba(0, 50, 0, 0.7)), url(${image})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    innerWidth: '100%',
+    scale: "1.1",
+  }
+  const MyStyle={
+    backgroundImage: `url(${tree})`,
+  }
   return (
     <>
     <div className="container">
         <header className="header">
           
-          <div className="description">
+          <div style={myStyle} className="description">
             <h1>Electrifying the Future</h1>
             <p>International Conference on Innovations, Challenges & Sustainable Mobility (EFICS-2025)</p>
             <p>30th & 31st May, 2025</p>
@@ -16,7 +29,7 @@ const Home = () => {
         </header>
   
         {/* About Section */}
-        <section className="about">
+        <section  className="about">
           <h2>About Us</h2>
           <p>
           The Department of Electrical and Electronics Engineering (EEE) at Sri Venkateswara University College of Engineering (SVUCE), Tirupati, is proud to host EFICS-2025, a two-day international conference on May 30th and 31st, 2025. This event aims to provide a platform for academicians, industry professionals, and students to present their research innovations and engage in knowledge exchange.
@@ -32,11 +45,11 @@ const Home = () => {
         </section>
   
         {/* Keynote Speaker Section */}
-        <section className="outer-section">
+        <section style={MyStyle} className="outer-section">
           <section className="keynote">
           
           <div className="speaker-card">
-            <img src="efics-2025\public\google.jpeg" class="speaker-img" />
+            <img src={logo} class="speaker-img" ></img>
             <div>
               <h2>OUR Keynote Speaker</h2>
               <div className="scroll-bar">

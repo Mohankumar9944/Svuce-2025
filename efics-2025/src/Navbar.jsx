@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css"
+import logo from "./logo.jpg"
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,7 +10,7 @@ function Navbar() {
   };
   return (
     <nav className="navbar">
-      <img className="logo" src="logo.jpg" />
+      <img className="logo" src={logo} />
       <div className="hamburger" onClick={toggleMenu}>
         <span></span>
         <span></span>
